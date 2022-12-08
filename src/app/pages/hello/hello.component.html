@@ -1,0 +1,16 @@
+<h2>Hello there!</h2>
+
+<form class="example-form" (submit)="showUserInfo()">
+  <div *ngFor="let item of listUser">
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input [(ngModel)]="item.name"  matInput >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <input [(ngModel)]="item.age" matInput>
+    </mat-form-field>
+  </div>
+  <button mat-raised-button type="submit">Show User Info</button>
+</form>

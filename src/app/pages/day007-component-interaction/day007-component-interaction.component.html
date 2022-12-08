@@ -1,0 +1,14 @@
+<input type="number" [(ngModel)]="progress2">
+<div class="progress-bar-container mb-4" [style.backgroundColor]="backgroundColor">
+  <div
+    class="progress"
+    [style]="{ backgroundColor: progressColor, width: progress2 + '%' }">
+  </div>
+</div>
+
+<div class="progress-bar-container" [style.backgroundColor]="backgroundColor">
+  <div
+    class="progress"
+    [style]="{ backgroundColor: progressColor, width: progress + '%' }">
+  </div>
+</div>

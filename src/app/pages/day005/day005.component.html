@@ -1,0 +1,19 @@
+<ng-template
+  ngFor
+  [ngForOf]="authors"
+  let-author
+  let-idx="index"
+  let-total="count"
+  let-ft="even">
+  <div>
+    ({{ idx }})/({{ total }}): {{ author.id }} - {{ author.firstName }}
+    {{ author.lastName }}
+  </div>
+</ng-template>
+
+<app-day007-component-interaction
+  [progress]="incre"
+  [backgroundColor]="'#9e9e9e'"
+  [progressColor]="'#2e8b57'">
+
+</app-day007-component-interaction>
